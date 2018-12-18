@@ -1,9 +1,9 @@
 {
-  "name": "advanced-boilerplate",
-  "version": "1.0.1",
+  "name": "forest",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/loftschool/advanced-boilerplate.git"
+    "url": "https://github.com/matveyeff/forest.git"
   },
   "description": "",
   "main": "gulpfile.js",
