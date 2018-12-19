@@ -1,11 +1,12 @@
 .inlined-svg {
-  background: svg-load('github.svg', fill=$green) center center no-repeat;
-  width: 30px;
-  height: 30px;
+	background: svg-load('github.svg', fill=#fff) center center no-repeat;
+	opacity: .5;
+  width: 26px;
+  height: 22px;
   cursor: pointer;
   
   &:hover {
-    background-image: svg-load('github.svg', fill=red);
+    background-image: svg-load('github.svg', fill=#4e8839);
   }
 }
 

@@ -1,6 +1,23 @@
 extends ../auth.layout.pug
 
 block content
-  .hello-world
-    +icon('portfolio_header', 'hello-world__block')
-    .inlined-svg
+	section.welcome
+		.top-line
+			.auth
+				a(href="#").auth__btn Авторизоваться
+		main.welcome__block
+			.welcome__content
+				.welcome__info
+					.welcome__pic
+						img.welcome__img(src="/assets/images/avatar.jpg")
+					h2.welcome__name Дмитрий Матвеев
+					p.welcome__desc Личный сайт веб разработчика
+					.hello-world
+						a.icon__link(href="#"): +icon('vk', 'welcome__icon')
+						a.icon__link(href="#"): +icon('github', 'welcome__icon')
+						a.icon__link(href="#"): +icon('in', 'welcome__icon')
+			.welcome__nav
+				.welcome__item: a.welcome__link(href="#") Мои работы
+				.welcome__item: a.welcome__link(href="#") Обо мне
+				.welcome__item: a.welcome__link(href="#") Блог		
+		.copyright © Дмитрий Матвеев | создано с любовью в LoftSchool | 2018	
