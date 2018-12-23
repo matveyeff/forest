@@ -22,7 +22,10 @@ body {
 	width: 95%;
 	
 	&_footer {
+		position: relative;
 		margin: 0 auto;
+		height: 100vh;
+		width: 100%;
 	}
 }
 

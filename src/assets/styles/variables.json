@@ -1,7 +1,8 @@
 {
   "white": "#efeee9",
   "beige": "#eeebdf",
-  "green": "#16c2aa",
+	"green": "#16c2aa",
+	"light-green": "#6c9c5a",
   "text-color": "#455a64",
   "grey": "#373e42",
   "light-grey": "#dfdcd5",

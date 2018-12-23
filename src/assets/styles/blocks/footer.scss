@@ -1,6 +1,8 @@
 .footer {
 
 	&__wrap {
+		position: absolute;
+		bottom: 0;
 		display: flex;
 		width: 100%;
 		height: 9.18rem;
@@ -19,6 +21,8 @@
 
 	&__menu {
 		width: 33.3%;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__quote {
@@ -30,6 +34,8 @@
 	}
 
 	&__copyright {
+		position: absolute;
+		bottom: 0;
 		width: 100%;
 		height: 2.375rem;
 		background-color: #6c9c5a;
@@ -43,4 +49,102 @@
 		justify-content: center;
 	}
 
+	&__contacts {
+		background-color: #f4f5f0;
+		opacity: .85;
+		position: absolute;
+		top: 50%;
+    left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 0.2rem;
+	}
+
+	&__nav {
+		display: flex;
+		list-style-type: none;
+		margin-bottom: 1rem;
+	}
+}
+
+.nav__item {
+	margin-right: 1rem;
+}
+
+.nav__link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 4rem;
+
+
+	&__title {
+		position: relative;
+		color: #566358;
+		font-family: 'sansus', sans-serif;
+		font-size: 2.1875rem;
+		font-weight: 400;
+		line-height: 2.5625rem;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		padding-bottom: 1.5rem;
+
+		&:after {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 90px;
+			height: 3px;
+			content: "";
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+			background-color: #566358;
+		}
+	}
+
+	&__item {
+		margin-bottom: 1.56rem;
+	}
+
+	&__link {
+		display: flex;
+		opacity: .8;
+		color: #566358;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+		text-decoration: none;
+
+		&:before {
+			content: '';
+			width: 23px;
+			margin-right: 0.625rem;
+		}
+	}
+	&__link--skype {
+		&:before {
+			background: svg-load('skype.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+	&__link--e-mail {
+		&:before {
+			background: svg-load('envelope2.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+	&__link--phone {
+		&:before {
+			background: svg-load('phone2.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+	&__link--address {
+		&:before {
+			background: svg-load('map_marker.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
 }

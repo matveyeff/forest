@@ -1,0 +1,92 @@
+.about {
+	display: flex;
+	position: relative;
+
+	&__left {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		width: 50%;
+		background-color: #ebefe2;
+
+		&-content {
+			padding-right: 25px;
+		}
+	}
+
+	&__right {
+		width: 50%;
+		background-color: #f4f5f0;
+		position: relative;
+
+		&-content {
+			padding-left: 2rem;
+			padding-bottom: 2rem;
+		}
+
+		&-description {
+			color: #566358;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.block-title {
+	color: #373e42;
+	font-family: 'sansus', sans-serif;
+	font-size: 63px;
+	font-weight: 400;
+	line-height: 66px;
+	text-transform: uppercase;
+	letter-spacing: 1.57px;
+}
+
+.block-subtitle {
+	color: #566358;
+	font-family: 'sansus', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 41px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.about__triangle {
+	width: 100%;
+	margin-top: -150px;
+	position: absolute;
+	display: flex;
+}
+
+.triangle {
+	height: 150px;
+	width: 100%;
+	z-index: 100;
+}
+
+.user-description {
+	width: 440px;
+
+	&__avatar {
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		color: #566358;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}

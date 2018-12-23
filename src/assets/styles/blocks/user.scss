@@ -1,0 +1,31 @@
+.user {
+	display: flex;
+	justify-content: center;
+	width: 8.75rem;
+	height: 8.75rem;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 1;
+	margin-bottom: 1.2rem;
+
+	&__img {
+		min-width: -webkit-fill-available;
+	}
+	
+	&__name {
+		color: #fff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.1875rem;
+		font-weight: 500;
+		margin-bottom: .3rem;
+	}
+
+	&__desc {
+		color: #fff;
+		font-size: 1rem;
+		font-weight: 300;
+		opacity: .8;
+		margin-bottom: 1.5rem;
+	}
+
+}
