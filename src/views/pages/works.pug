@@ -1,0 +1,68 @@
+extends ../main.layout.pug
+
+
+block variables
+	-	var title	=	'Обо мне'
+
+block scripts
+	script(src='about.bundle.js')
+
+block content
+	section.works
+		svg(fill="#faf8f0", viewbox="0 0 900 150", class="blog__triangle-left", preserveAspectRatio="none")
+			polygon(points="0,0 0,150 900,150")
+		svg(fill="#faf8f0", viewbox="0 0 900 150", class="blog__triangle-right", preserveAspectRatio="none")
+			polygon(points="0,150 900,150 900,0")
+		.works__title-container
+			.works__title Мои работы
+		.works-slider
+			.works-slider-left
+				span.works-slider__used-wrapper
+					h2.works-slider__title Фитнес-клуб "Афродита"
+				span.works-slider__used-wrapper
+					h4.works-slider__subtitle HTML5, CSS3
+				a(href="#").works-slider__button-link Посмотреть сайт
+			.works-slider__img-container
+				img(src="assets/images/photo.jpg").works-slider__img
+			.works-slider__buttons
+				button.works-slider__button.works-slider__prev
+					.slider-anim-container
+						.works-slider__bg-button(style="background-image: url('assets/images/yoga.png')")
+				button.works-slider__button.works-slider__next
+					.slider-anim-container
+						.works-slider__bg-button(style="background-image: url('assets/images/trialog.png')")
+
+	section.works-about
+		h2.works__title.works-about__title Что обо мне говорят
+		.works-about__comment
+			blockquote.works-about__comment-container
+				.works-about__avatar(style="background-image: url('assets/images/comment_avatar.png')")
+				p.works-about__comment-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+				cite.works-about__name Ковальчук Дмитрий
+				span.works-about__who основатель Loftschool
+			blockquote.works-about__comment-container
+				.works-about__avatar(style="background-image: url('assets/images/comment_avatar2.png')")
+				p.works-about__comment-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+				cite.works-about__name Сабанцев Владимир
+				span.works-about__who преподаватель
+		.works-about__contact
+			.works-about__contact-card
+				.works-about__blur(style="background-size: 1903px; background-position-y: -876.851px")
+				.works-form-wrap
+					h3.works-about__small-title Связаться со мной
+					form.works-form
+						.works-form__input-wrapper
+							label(for="works-name").visually-hidden Имя
+							input(type="text" name="name" id="works-name" placeholder="Имя" required="required").works-form__input
+						.works-form__input-wrapper
+							label(for="works-mail").visually-hidden E-Mail
+							input(type="text" name="mail" id="works-mail" placeholder="Email" required="required").works-form__input
+						.works-form__input-wrapper
+							label(for="works-message").visually-hidden Ваше сообщение
+							textarea(name="message" id="works-message" placeholder="Ваше сообщение" required="required").works-form__textarea
+						.works-form__buttons-wrapper
+							ul.works-form__buttons-list
+								li.works-form__buttons-item
+									button(type="submit").works-form__buttons Отправить
+								li.works-form__buttons-item
+									button(type="reset").works-form__buttons Очистить	
