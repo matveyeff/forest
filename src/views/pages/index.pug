@@ -5,59 +5,61 @@ block content
 		.top-line
 			.auth
 				a(href="#").auth__btn Авторизоваться
-		.welcome__block
-			.welcome__content
-				.welcome__info
-					.user
-						img.user__img(src="/assets/images/avatar.jpg")
-					h2.user__name Дмитрий Матвеев
-					p.user__desc Личный сайт веб разработчика
-					ul.icon__list
-						a.icon__link(href="#"): +icon('vk', 'welcome__icon')
-						a.icon__link(href="#"): +icon('github', 'welcome__icon')
-						a.icon__link(href="#"): +icon('in', 'welcome__icon')
-			.welcome__nav
-				.welcome__item: a.welcome__link(href="/works.html") Мои работы
-				.welcome__item: a.welcome__link(href="/about.html") Обо мне
-				.welcome__item: a.welcome__link(href="/blog.html") Блог
-			form.welcome__login
-				h2.form__title Авторизация
-				.form__item
-					.form__icon
-						+icon('login', 'login__icon')
-					input.form__input.form__input--icon(type="text" placeholder="Логин" name="login")
-					span.form__error
-						span.error__triangle
-						span.error__text  
-				.form__item
-					.form__icon
-						+icon('password', 'login__icon')
-					input.form__input.form__input--icon(type="password" placeholder="Пароль" name="password")
-					span.form__error
-						span.error__triangle
-						span.error__text  
-				.form__item.form__item--human
-					input#checkbox_human.form__checkbox(type="checkbox" name="human_check")
-					label.checkbox_btn(for="checkbox_human")
-					label.author__about.form__item-label(for="checkbox_human") Я человек
-				span.author__about.form__robot-text Вы точно не робот?
-				.form__item
-					.form__sure
-						.form__sure--yes
-							input#radio_yes.form__radio(type="radio" name="form__radio")
-							label.radio_btn(for="radio_yes")
-							label.author__about.form__radio--yes(for="radio_yes") Да
-						.form__sure--no
-							input#radio_no.form__radio(type="radio" name="form__radio")
-							label.radio_btn(for="radio_no")
-							label.author__about.form__radio--no(for="radio_no") Не уверен
-					span.form__error.form__error__human
-						span.error__triangle
-						span.error__text  
-			ul.form__menu
-				li.form__item
-					a#sign_in_back.form__link(href="javaScript:void(0)") На главную
-				li.form__item
-					a#sign_in.form__link(href="javaScript:void(0)") Войти
+		.welcome__block.flip-container
+			.flip-card
+				.welcome__content
+					.welcome__info
+						.user
+							img.user__img(src="/assets/images/avatar.jpg")
+						h2.user__name Дмитрий Матвеев
+						p.user__desc Личный сайт веб разработчика
+						ul.icon__list
+							a.icon__link(href="#"): +icon('vk', 'welcome__icon')
+							a.icon__link(href="#"): +icon('github', 'welcome__icon')
+							a.icon__link(href="#"): +icon('in', 'welcome__icon')
+				.welcome__nav
+					.welcome__item: a.welcome__link(href="/works.html") Мои работы
+					.welcome__item: a.welcome__link(href="/about.html") Обо мне
+					.welcome__item: a.welcome__link(href="/blog.html") Блог
+			.flip-card
+				form.welcome__login
+					h2.form__title Авторизация
+					.form__item
+						.form__icon
+							+icon('login', 'login__icon')
+						input.form__input.form__input--icon(type="text" placeholder="Логин" name="login")
+						span.form__error
+							span.error__triangle
+							span.error__text  
+					.form__item
+						.form__icon
+							+icon('password', 'login__icon')
+						input.form__input.form__input--icon(type="password" placeholder="Пароль" name="password")
+						span.form__error
+							span.error__triangle
+							span.error__text  
+					.form__item.form__item--human
+						input#checkbox_human.form__checkbox(type="checkbox" name="human_check")
+						label.checkbox_btn(for="checkbox_human")
+						label.author__about.form__item-label(for="checkbox_human") Я человек
+					span.author__about.form__robot-text Вы точно не робот?
+					.form__item
+						.form__sure
+							.form__sure--yes
+								input#radio_yes.form__radio(type="radio" name="form__radio")
+								label.radio_btn(for="radio_yes")
+								label.author__about.form__radio--yes(for="radio_yes") Да
+							.form__sure--no
+								input#radio_no.form__radio(type="radio" name="form__radio")
+								label.radio_btn(for="radio_no")
+								label.author__about.form__radio--no(for="radio_no") Не уверен
+						span.form__error.form__error__human
+							span.error__triangle
+							span.error__text  
+				ul.form__menu
+					li.form__item
+						a#sign_in_back.form__link(href="javaScript:void(0)") На главную
+					li.form__item
+						a#sign_in.form__link(href="javaScript:void(0)") Войти
 		
 		.copyright © Дмитрий Матвеев | создано с любовью в LoftSchool | 2018	
