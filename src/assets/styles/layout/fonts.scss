@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'bernier';
-  src: url('/assets/fonts/bernierregular-regular-webfont.woff') format('woff'), 
-  url('/assets/fonts/bernierregular-regular-webfont.woff2') format('woff2');
+  src: url('./assets/fonts/bernierregular-regular-webfont.woff') format('woff'), 
+  url('./assets/fonts/bernierregular-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'sansus';
-  src: url('/assets/fonts/Sansus-Webissimo-Regular.ttf') format('woff');
+  src: url('./assets/fonts/Sansus-Webissimo-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
