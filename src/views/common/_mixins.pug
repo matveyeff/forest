@@ -1,9 +1,9 @@
 mixin icon(iconName, iconClass)
 	svg(class=`${iconClass}`)
-		use(xlink:href=`/assets/images/icons/sprite.svg#${iconName}`)
+		use(xlink:href=`./assets/images/icons/sprite.svg#${iconName}`)
 
 mixin image(imagePath, imageAlt, imageClass)
-	img(src=`/assets/images/${imagePath}`, alt=`${imageAlt}`, class=`${imageClass}`)
+	img(src=`./assets/images/${imagePath}`, alt=`${imageAlt}`, class=`${imageClass}`)
 
 mixin socials(className)
 	-var socials= ['vk', 'github', 'skype']
@@ -24,9 +24,9 @@ mixin card-avatar(subClass, title, subtitle, nosvg)
 		if(!nosvg)
 			.card-avatar__stars
 				svg.card-avatar__svg
-					use(xlink:href="assets/images/sprite.svg#stars1")
+					use(xlink:href="./assets/images/sprite.svg#stars1")
 		.card-avatar__photo
-			img(src="assets/images/photo.jpg", alt="MyFace").img-responsive
+			img(src="./assets/images/photo.jpg", alt="MyFace").img-responsive
 		.card-avatar__titles
 			h1(class="card-avatar__title " + subClass)= title
 			p.card-avatar__subtitle= subtitle
