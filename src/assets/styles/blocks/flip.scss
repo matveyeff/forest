@@ -3,11 +3,6 @@
 	perspective: 1000;
  }
  
-/* переверните сторону при проведении мышью */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-	transform: rotateY(180deg);
-}
- 
  /* здесь находится скорость перевертывания */
  .flipper {
 	transition: 0.6s;
