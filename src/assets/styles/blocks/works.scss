@@ -203,7 +203,7 @@
 }
 
 .works-about {
-	background: url('assets/images/works-bg.jpg') #f4f5f0 no-repeat 50%;
+	background: url('./assets/images/works-bg.jpg') #f4f5f0 no-repeat 50%;
 	background-size: cover;
 	padding-bottom: 21.875rem;
 	padding-top: 3.75rem;
@@ -318,7 +318,7 @@
 }
 
 .works-about__small-title {
-	font-family: Sansus;
+	font-family: 'sansus', sans-serif;
 	font-size: 2.1875rem;
 	margin-bottom: 2.5rem;
 	text-align: center;
