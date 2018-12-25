@@ -1,13 +1,12 @@
 /* весь контейнер поддерживает перспективу */
 .flip-container {
-	perspective: 1000;
+	perspective: 1000px;
  }
  
  /* здесь находится скорость перевертывания */
  .flipper {
 	transition: 0.5s;
 	transform-style: preserve-3d;
- 
 	position: relative;
  }
  
@@ -15,7 +14,6 @@
  .front, .back {
 	backface-visibility: hidden;
 	width: 23.75rem;
-
  }
  
  /* лицевая сторона размещена над обратной */
