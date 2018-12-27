@@ -90,8 +90,8 @@ script.
 		camera.position.z = 1;
 		scene = new THREE.Scene();
 		var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
-		var MyTexture = loader.load( "../assets/images/water.jpg" );
-		var mapTexture = loader.load( "../assets/images/water-maps.jpg" );
+		var MyTexture = loader.load( "./assets/images/water.jpg" );
+		var mapTexture = loader.load( "./assets/images/water-maps.jpg" );
 		MyTexture.minFilter = THREE.LinearFilter;
 		uniforms = {
 				u_time: { type: "f", value: 1.0 },
