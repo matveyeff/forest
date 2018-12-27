@@ -1,0 +1,85 @@
+.contacts {
+	position: relative;
+	margin: 0 auto;
+	height: 100vh;
+	width: 100%;
+
+	&__wrap {
+		background-color:rgba(244, 245, 240, 0.85);
+		position: absolute;
+    top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: 2rem 4rem;
+		text-align: center;
+	}
+
+	&__title {
+		position: relative;
+		color: #566358;
+		font-family: 'sansus', Helvetica, sans-serif;
+		font-size: 2.1875rem;
+		font-weight: 400;
+		line-height: 2.5625rem;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		padding-bottom: 1.5rem;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 5.625rem;
+			height: 3px;
+			transform: translateX(-50%);
+			background-color: #566358;
+		}
+	}
+
+	&__item {
+		margin-bottom: 1.56rem;
+	}
+
+	&__link {
+		display: flex;
+		opacity: .8;
+		color: #566358;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+		text-decoration: none;
+
+		&:before {
+			content: '';
+			width: 1.4375rem;
+			margin-right: 0.625rem;
+		}
+	}
+
+	&__link--skype {
+		&:before {
+			background: svg-load('skype.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+
+	&__link--e-mail {
+		&:before {
+			background: svg-load('envelope2.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+
+	&__link--phone {
+		&:before {
+			background: svg-load('phone2.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+
+	&__link--address {
+		&:before {
+			background: svg-load('map_marker.svg', fill=#6c9c5a ) no-repeat center;
+		}
+	}
+	
+}

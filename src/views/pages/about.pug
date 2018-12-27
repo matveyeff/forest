@@ -5,43 +5,38 @@ block variables
 	-	var title	=	'Обо мне'
 
 block scripts
+	include ../common/googleMap
 	script(src='about.bundle.js')
-	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
-
 
 block content
 	section.about
+		.about__triangle
+			svg(fill="#ebefe2", viewbox="0 0 100 100", class="triangle", preserveAspectRatio="none")
+				polygon.triangle-left(points="0 100, 50 100, 0 0")
+				polygon.triangle-right(points="50,100 100,0 100,100")
 		.about__left
-			.about__triangle
-				svg(fill="#ebefe2", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
-					polygon(points="0,0 0,150 900,150")
-			.about__left-title
-				.block-title Обо мне
+			.about__left-title Обо мне
 			.about__left-content
 				.user-description
 					.user-description__image
 						img(src="./assets/images/about_avatar.jpg").user-description__avatar
 					.user-description__data
-						.user-description__title
-							.block-subtitle Кто я
+						h2.user-description__title Кто я
 						.user-description__text.text-content
-							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempore non modi ex quia deserunt, beatae sint explicabo consequuntur maxime cupiditate, aliquam repudiandae tenetur natus labore voluptatum fugiat totam veritatis.
-							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempore non modi ex quia deserunt, beatae sint explicabo consequuntur maxime cupiditate, aliquam repudiandae tenetur natus labore voluptatum fugiat totam veritatis.
+							p Я веб разработчик из Москвы. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+							p Этот сайт я сделал в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
 		.about__right
-			.about__triangle
-				svg(fill="#f4f5f0", viewbox="0 0 900 150", class="triangle", preserveAspectRatio="none")
-					polygon(points="0,150 900,150 900,0")
 			.about__right-title
-				.block-subtitle Чем я могу быть вам полезен
+				h3.about__right-subtitle Чем я могу быть вам полезен
 			.about__right-description.text-content
 				p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
 			.about__right-content
 
 				-
 					var skills = [
-						['Frontend', [['Html5', 30], ['css3', 50], ['javascript', 70]]],
-						['Backend', [['Html5', 30], ['css3', 50], ['javascript', 70], ['Mongo db', 70]]],
-						['Workflow', [['Html5', 30], ['css3', 50], ['javascript', 70]]],
+						['Frontend', [['HTML5', 30], ['CSS3', 50], ['javascript & jQuery', 70]]],
+						['Backend', [['PHP', 30], ['mySQL', 50], ['Node.js & npm', 70], ['Mongo.db', 70]]],
+						['Workflow', [['Git', 30], ['Gulp', 50], ['Bower', 70]]],
 					]
 
 				ul.skills-list
@@ -51,8 +46,21 @@ block content
 							ul.skills-row__list
 								each skill in skillsrow[1]
 									li.skills-row__item
-										figure.skill(data-percents="70")
+										.skill(data-percents="70")
 											svg(viewBox="0 0 100 100" preserveAspectRatio="none").skill__figure
 												circle(cx="50" cy="50" r="40").skill__circle.skill__circle_under
 												circle(cx="50" cy="50" r="40").skill__circle.skill__circle_above
-											.skill__title #{skill[0]}		
+											.skill__title #{skill[0]}
+	section.contacts
+		.map#map(style="width:100%; height:100%")
+		.contacts__wrap
+			.contacts__title Контакты
+			ul.contacts__lists
+				li.contacts__item
+					a.contacts__link.contacts__link--skype(href="#") dmitriimatveyeff
+				li.contacts__item
+					a.contacts__link.contacts__link--e-mail(href="#") dmitriimatveyeff@mail.com
+				li.contacts__item
+					a.contacts__link.contacts__link--phone(href="#") +7-916-283-66-83
+				li.contacts__item
+					a.contacts__link.contacts__link--address(href="#") Москва, пр. Академический, д. 12										

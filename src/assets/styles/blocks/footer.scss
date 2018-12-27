@@ -1,14 +1,21 @@
 .footer {
 
 	&__wrap {
-		position: absolute;
-		bottom: 0;
 		display: flex;
 		width: 100%;
-		height: 9.18rem;
+		height: 9.1875rem;
 		background-color: #373e42;
 		opacity: 0.85;
-		padding: 1.875rem;
+		padding: .875rem;
+
+		@include tablets {
+			flex-flow: wrap;
+			height: 15rem;
+		}
+
+		@include phones {
+			height: 17rem;
+		}
 	}
 
 	&__text {
@@ -17,12 +24,53 @@
 		font-weight: 300;
 		padding-right: 14rem;
 		line-height: 1.5rem;
+		position: relative;
+
+		@include laptops {
+			padding-right: 0;
+		}
+
+		@include tablets {
+			width: 50%;
+		}
+
+		@include phones {
+			width: 100%;
+			text-align: center;
+		}
+
+		&:after {
+			background: hsla(0,0%,100%,.2);
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 70px;
+			position: absolute;
+			right: 2rem;
+			top: 0;
+			width: 1px;
+			opacity: .5;
+
+			@include tablets {
+				right: 0.5rem;
+			}
 	}
+}
 
 	&__menu {
 		width: 33.3%;
 		display: flex;
 		flex-direction: column;
+		border-left: 1px #fff;
+
+		@include tablets {
+			width: 50%;
+		}
+
+		@include phones {
+			width: 100%;
+			align-items: center;
+		}
 	}
 
 	&__quote {
@@ -31,11 +79,48 @@
 		font-family: 'Roboto', Helvetica, sans-serif;
 		font-weight: 300;
 		opacity: .5;
+		position: relative;
+		padding-right: 10rem;
+
+		@include laptops {
+			padding-right: 0;
+		}
+
+		@include tablets {
+			padding-right: 0;
+			width: 100%;
+		}
+
+		@include phones {
+			text-align: center;
+		}
+
+		&-text {
+			font-style: italic;
+			font-size: 1rem;
+			font-weight: 300;
+			line-height: 26.04px;
+		}
+
+		&-author {
+			font-weight: 700;
+			font-style: italic;
+		}
+
+		&:after {
+			background: hsla(0,0%,100%,.2);
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 70px;
+			position: absolute;
+			left: -30px;
+			top: 0;
+			width: 1px;
 	}
+}
 
 	&__copyright {
-		position: absolute;
-		bottom: 0;
 		width: 100%;
 		height: 2.375rem;
 		background-color: #6c9c5a;
@@ -73,78 +158,16 @@
 .nav__link {
 	text-decoration: none;
 	color: #fff;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-weight: 700;
+
+	@include laptops {
+		font-weight: 500;
+		font-size: 1rem;
+	}
 }
 
-.contacts {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem 4rem;
-
-
-	&__title {
-		position: relative;
-		color: #566358;
-		font-family: 'sansus', sans-serif;
-		font-size: 2.1875rem;
-		font-weight: 400;
-		line-height: 2.5625rem;
-		text-transform: uppercase;
-		margin-bottom: 2rem;
-		padding-bottom: 1.5rem;
-
-		&:after {
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			width: 90px;
-			height: 3px;
-			content: "";
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
-			background-color: #566358;
-		}
-	}
-
-	&__item {
-		margin-bottom: 1.56rem;
-	}
-
-	&__link {
-		display: flex;
-		opacity: .8;
-		color: #566358;
-		font-family: 'Roboto', sans-serif;
-		font-size: 1rem;
-		font-weight: 500;
-		line-height: 1.5rem;
-		text-decoration: none;
-
-		&:before {
-			content: '';
-			width: 23px;
-			margin-right: 0.625rem;
-		}
-	}
-	&__link--skype {
-		&:before {
-			background: svg-load('skype.svg', fill=#6c9c5a ) no-repeat center;
-		}
-	}
-	&__link--e-mail {
-		&:before {
-			background: svg-load('envelope2.svg', fill=#6c9c5a ) no-repeat center;
-		}
-	}
-	&__link--phone {
-		&:before {
-			background: svg-load('phone2.svg', fill=#6c9c5a ) no-repeat center;
-		}
-	}
-	&__link--address {
-		&:before {
-			background: svg-load('map_marker.svg', fill=#6c9c5a ) no-repeat center;
-		}
-	}
+#map {
+	width: 100%;
+	height: 100%;
 }

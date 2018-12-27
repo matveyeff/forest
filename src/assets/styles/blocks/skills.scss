@@ -1,8 +1,13 @@
 .skill {
   display: block;
   position: relative;
-  width: 130px;
-  height: 130px;
+  width: 110px;
+	height: 110px;
+	
+	@include phones {
+		width: 150px;
+		height: 150px;
+	}
 }
 
 .skill__figure {
@@ -28,8 +33,35 @@
 	stroke-opacity: .9;
 }
 
+.skills-list {
+
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.skills-row {
+	margin-bottom: 1.25rem;
+}
+
+.skills-row__item {
+	margin-right: 2.5rem;
+
+	@include tablets {
+		margin-right: .5rem;
+	}
+}
+
 .skills-row__list {
 	display: flex;
+	
+	@include phones {
+		flex-flow: wrap;
+		justify-content: center;
+	}
 }
 
 .skills-row__title {
@@ -37,7 +69,6 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
 	font-weight: 500;
-	line-height: 32px;
 }
 
 .skill__title {
@@ -47,8 +78,8 @@
 	transform: translate(-50%,-50%);
 	color: #4e8839;
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-size: .8125rem;
 	font-weight: 500;
-	line-height: 32px;
-	text-transform: uppercase;
+	line-height: 1rem;
+	text-align: center;
 }

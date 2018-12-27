@@ -29,3 +29,36 @@
 	}
 
 }
+
+.user-description__title {
+	color: #566358;
+	font-family: 'sansus', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 41px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	position: relative;
+	line-height: 2;
+
+	@include phones {
+		font-size: 2.4rem;
+	}
+
+	&:after {
+		background: #373e42;
+		bottom: 0;
+		content: "";
+		height: 3px;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		width: 5.625rem;
+
+		@include phones {
+			width: 4.3rem;
+		}
+	}
+}

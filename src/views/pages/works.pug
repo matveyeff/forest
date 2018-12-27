@@ -9,10 +9,10 @@ block scripts
 
 block content
 	section.works
-		svg(fill="#faf8f0", viewbox="0 0 900 150", class="blog__triangle-left", preserveAspectRatio="none")
-			polygon(points="0,0 0,150 900,150")
-		svg(fill="#faf8f0", viewbox="0 0 900 150", class="blog__triangle-right", preserveAspectRatio="none")
-			polygon(points="0,150 900,150 900,0")
+		.works__triangle
+			svg(fill="#f8f9f5", viewbox="0 0 100 100", class="triangle", preserveAspectRatio="none")
+				polygon.triangle-left(points="0 100, 50 100, 0 0")
+				polygon.triangle-right(points="50,100 100,0 100,100")
 		.works__title-container
 			.works__title Мои работы
 		.works-slider

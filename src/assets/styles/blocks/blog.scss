@@ -5,11 +5,19 @@
 		padding: 6.8rem 2rem 4.8rem 2rem;
 		background-color: #faf8f0;
 		overflow: auto;
+
+		@include tablets {
+			padding: .8rem 2rem .8rem;
+		}
 	}
 
 	&__content {
 		width: 75%;
 		max-width: 55rem;
+
+		@include tablets {
+			width: 100%;
+		}
 	}
 
 	&__item {
@@ -69,6 +77,10 @@
 	text-align: right;
 	margin-right: 7.25rem;
 	position: sticky;
+
+	@include tablets {
+		display: none;
+	}
 
 	&__title {
 		color: #455a64;

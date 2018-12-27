@@ -1,1 +1,134 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Portfolio | welcome page</title><link rel="stylesheet" href="main.min.css"></head><body><section class="welcome"><div class="top-line"><div class="auth"><a class="auth__btn" href="#" id="authBtn">Авторизоваться</a></div></div><div class="welcome__block flip-container"><div class="flipper" id="flipper"><div class="front"><div class="welcome__content"><div class="welcome__info"><div class="user"><img class="user__img" src="./assets/images/avatar.jpg"></div><h2 class="user__name">Дмитрий Матвеев</h2><p class="user__desc">Личный сайт веб разработчика</p><ul class="icon__list"><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#vk"></use></svg></a><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#github"></use></svg></a><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#in"></use></svg></a></ul></div></div><div class="welcome__nav"><div class="welcome__item"><a class="welcome__link" href="./works.html">Мои работы</a></div><div class="welcome__item"><a class="welcome__link" href="./about.html">Обо мне</a></div><div class="welcome__item"><a class="welcome__link" href="./blog.html">Блог</a></div></div></div><div class="back"><form class="welcome__login"><h2 class="form__title">Авторизация</h2><div class="form__item"><div class="form__icon"><svg class="login__icon"><use xlink:href="./assets/images/icons/sprite.svg#login"></use></svg></div><input class="form__input form__input--icon" type="text" placeholder="Логин" name="login"><span class="form__error"><span class="error__triangle"></span><span class="error__text"> </span></span></div><div class="form__item"><div class="form__icon"><svg class="login__icon"><use xlink:href="./assets/images/icons/sprite.svg#password"></use></svg></div><input class="form__input form__input--icon" type="password" placeholder="Пароль" name="password"><span class="form__error"><span class="error__triangle"></span><span class="error__text"> </span></span></div><div class="form__item form__item--human"><input class="form__checkbox" id="checkbox_human" type="checkbox" name="human_check"><label class="checkbox_btn" for="checkbox_human"></label><label class="author__about form__item-label" for="checkbox_human">Я человек</label></div><span class="author__about form__robot-text">Вы точно не робот?</span><div class="form__item"><div class="form__sure"><div class="form__sure--yes"><input class="form__radio" id="radio_yes" type="radio" name="form__radio"><label class="radio_btn" for="radio_yes"></label><label class="author__about form__radio--yes" for="radio_yes">Да</label></div><div class="form__sure--no"><input class="form__radio" id="radio_no" type="radio" name="form__radio"><label class="radio_btn" for="radio_no"></label><label class="author__about form__radio--no" for="radio_no">Не уверен</label></div></div><span class="form__error form__error__human"><span class="error__triangle"></span><span class="error__text"> </span></span></div></form><ul class="form__menu"><li class="form__item"><a class="form__link" id="sign_in_back" href="#">На главную</a></li><li class="form__item"><a class="form__link" id="sign_in" href="#">Войти</a></li></ul></div></div></div><div class="copyright">© Дмитрий Матвеев | создано с любовью в LoftSchool | 2018	</div></section><script src="auth.bundle.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Portfolio | welcome page</title><link rel="stylesheet" href="main.min.css"></head><body><div id="container"><section class="welcome"><div class="top-line"><div class="auth"><a class="auth__btn" href="#" id="authBtn">Авторизоваться</a></div></div><div class="welcome__block flip-container"><div class="flipper" id="flipper"><div class="front"><div class="welcome__content"><div class="welcome__info"><div class="user"><img class="user__img" src="./assets/images/avatar.jpg"></div><h2 class="user__name">Дмитрий Матвеев</h2><p class="user__desc">Личный сайт веб разработчика</p><ul class="icon__list"><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#vk"></use></svg></a><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#github"></use></svg></a><a class="icon__link" href="#"><svg class="welcome__icon"><use xlink:href="./assets/images/icons/sprite.svg#in"></use></svg></a></ul></div></div><ul class="welcome__nav"><li class="welcome__item"><a class="welcome__link" href="./works.html">Мои работы</a></li><li class="welcome__item"><a class="welcome__link" href="./about.html">Обо мне</a></li><li class="welcome__item"><a class="welcome__link" href="./blog.html">Блог</a></li></ul></div><div class="back"><form class="welcome__login"><h2 class="form__title">Авторизация</h2><div class="form__item"><div class="form__icon"><svg class="login__icon"><use xlink:href="./assets/images/icons/sprite.svg#login"></use></svg></div><input class="form__input form__input--icon" type="text" placeholder="Логин" name="login"><span class="form__error"><span class="error__triangle"></span><span class="error__text"> </span></span></div><div class="form__item"><div class="form__icon"><svg class="login__icon"><use xlink:href="./assets/images/icons/sprite.svg#password"></use></svg></div><input class="form__input form__input--icon" type="password" placeholder="Пароль" name="password"><span class="form__error"><span class="error__triangle"></span><span class="error__text"> </span></span></div><div class="form__item form__item--human"><input class="form__checkbox" id="checkbox_human" type="checkbox" name="human_check"><label class="checkbox_btn" for="checkbox_human"></label><label class="author__about form__item-label" for="checkbox_human">Я человек</label></div><span class="author__about form__robot-text">Вы точно не робот?</span><div class="form__item"><div class="form__sure"><div class="form__sure--yes"><input class="form__radio" id="radio_yes" type="radio" name="form__radio"><label class="radio_btn" for="radio_yes"></label><label class="author__about form__radio--yes" for="radio_yes">Да</label></div><div class="form__sure--no"><input class="form__radio" id="radio_no" type="radio" name="form__radio"><label class="radio_btn" for="radio_no"></label><label class="author__about form__radio--no" for="radio_no">Не уверен</label></div></div><span class="form__error form__error__human"><span class="error__triangle"></span><span class="error__text"> </span></span></div></form><ul class="form__menu"><li class="form__item"><a class="form__link" id="sign_in_back" href="#">На главную</a></li><li class="form__item"><a class="form__link" id="sign_in" href="#">Войти</a></li></ul></div></div></div><div class="copyright">© Дмитрий Матвеев | создано с любовью в LoftSchool | 2018</div></section><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script><script src="http://threejs.org/build/three.min.js"></script><script id="vertexShader" type="x-shader/x-vertex">varying vec2 v_position;
+uniform vec2 u_size;
+uniform vec2 u_resolution;
+
+void main() {
+		v_position = (position.xy+1.0)*0.5;
+		gl_Position =  vec4(position, 1.0);
+}
+</script><script id="fragmentShader" type="x-shader/x-fragment">uniform float u_time;
+varying vec2 v_position;
+uniform sampler2D u_image;
+uniform sampler2D u_maps;
+uniform vec2 u_mouse;
+uniform float u_dpi;
+uniform vec2 u_resolution;
+vec2 pos(){
+		return vec2(0.0,0.0);
+}
+
+vec4 blend(vec4 bg,vec4 fg){
+vec3 bgm=bg.rgb*bg.a;
+vec3 fgm=fg.rgb*fg.a;
+float ia=1.0-fg.a;
+float a=(fg.a + bg.a * ia);
+vec3 rgb;
+if(a!=0.0){
+		rgb=(fgm + bgm * ia) / a;
+}else{
+		rgb=vec3(0.0,0.0,0.0);
+}
+return vec4(rgb,a);
+}
+vec2 pixel(){
+return vec2(1.0*1.0)/u_resolution;
+}
+float wave(float x,float freq, float speed){
+return sin(x*freq+((u_time*(3.1415/2.0))*speed));
+}
+vec2 waves(vec2 pos){
+vec4 maps=texture2D(u_maps,pos);
+float mask=maps.r;
+float y=maps.g;
+float y2=pow(y,2.0);
+
+vec2 intensity=vec2(
+		0.5-(y2*0.5),
+		0.2+(y2*1.8)
+)*pixel();
+
+vec2 waves=vec2(
+		wave(y,400.0-(y2*200.0),-0.03), 
+		wave(y,400.0-(y2*400.0*0.05),-0.045)
+		+wave(y,900.0-(y2*900.0*0.05),-0.05)
+		+wave(pos.x,20.0+(y2*20.0*1.5),-0.01)
+);
+return pos+(waves*intensity*mask);
+}
+vec2 depth(vec2 pos){
+vec2 intensity=vec2(0.01,0.01);
+float d=0.05-pow(texture2D(u_maps,pos).b,1.0);
+return pos+(intensity*u_mouse*d);
+}
+void main(){
+		vec2 pos=v_position.xy;
+		vec2 turbulence=depth(waves(pos));
+		vec2 noTurbulence=depth(pos);
+		vec4 c=texture2D(u_image,turbulence);
+		gl_FragColor=vec4(c.rgb,1.0);
+}
+</script><script>var container;
+var camera, scene, renderer;
+var uniforms;
+var mouse = {x:0, y:0};
+var loader = new THREE.TextureLoader();
+init();
+animate();
+
+function init() {
+	container = document.getElementById( 'container' );
+	
+	camera = new THREE.Camera();
+	camera.position.z = 1;
+	scene = new THREE.Scene();
+	var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+	var MyTexture = loader.load( "./assets/images/water.jpg" );
+	var mapTexture = loader.load( "./assets/images/water-maps.jpg" );
+	MyTexture.minFilter = THREE.LinearFilter;
+	uniforms = {
+			u_time: { type: "f", value: 1.0 },
+			u_animation: { type: "f", value: 0.0 },
+			u_mouse: { type: "v2", value: new THREE.Vector2() },
+			u_resolution: { type: "v2", value: new THREE.Vector2() },
+			u_size: {type:"v2", value: new THREE.Vector2(MyTexture.width,MyTexture.height) },
+			u_image: {value:MyTexture },
+			u_maps: {value:mapTexture}
+	};
+	var material = new THREE.ShaderMaterial( {
+			uniforms: uniforms,
+			vertexShader: document.getElementById( 'vertexShader' ).textContent,
+			fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+	} );
+	var mesh = new THREE.Mesh( geometry, material );
+	scene.add( mesh );
+	renderer = new THREE.WebGLRenderer();
+	renderer.setPixelRatio( window.devicePixelRatio );
+	
+	container.appendChild( renderer.domElement );
+	onWindowResize();
+	window.addEventListener( 'resize', onWindowResize, false );
+}
+
+function onWindowResize( event ) {
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	uniforms.u_resolution.value.x = renderer.domElement.width;
+	uniforms.u_resolution.value.y = renderer.domElement.height;
+	uniforms.u_mouse.value.x = mouse.x;
+	uniforms.u_mouse.value.y = mouse.y;
+}
+function animate() {
+	requestAnimationFrame( animate );
+	render();
+}
+
+function render() {
+	uniforms.u_time.value += 1.0;
+	renderer.render( scene, camera );
+}
+
+document.addEventListener('mousemove',function(event){
+		TweenLite.to(uniforms.u_mouse.value, 1, {
+				x: ((event.pageX / window.innerWidth) - 0.5) * 1.5,
+				y: ((event.pageY / window.innerHeight)- 0.5) * 1.5
+		})
+})</script></div><script src="auth.bundle.js"></script></body></html>
