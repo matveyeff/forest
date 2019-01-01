@@ -1,85 +1,32 @@
-.skill {
-  display: block;
-  position: relative;
-  width: 110px;
-	height: 110px;
-	
-	@include phones {
-		width: 150px;
-		height: 150px;
-	}
-}
-
-.skill__figure {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-  transform: rotate(-90deg);
-}
-
-.skill__circle {
-  fill: transparent;
-  stroke: #ccc;
-  stroke-width: 15px; 
-}
-
-.skill__circle_above {
-  stroke: $light-green;
-  stroke-dasharray: 251;
-	stroke-dashoffset: 150;
-	stroke-width: 18px;
-	stroke-opacity: .9;
+.skills {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 }
 
 .skills-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-list__item {
+	display: flex;
+	margin-right: .5rem;
 
 	@include tablets {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+}
+
+.skills-list__title {
+  font-size: 28px;
+  font-weight: 500;
+	margin-bottom: 15px;
+	
+	@include tablets {
 		text-align: center;
 	}
-}
-
-.skills-row {
-	margin-bottom: 1.25rem;
-}
-
-.skills-row__item {
-	margin-right: 2.5rem;
-
-	@include tablets {
-		margin-right: .5rem;
-	}
-}
-
-.skills-row__list {
-	display: flex;
-	
-	@include phones {
-		flex-flow: wrap;
-		justify-content: center;
-	}
-}
-
-.skills-row__title {
-	color: #566358;
-	font-family: 'Roboto', sans-serif;
-	font-size: 28px;
-	font-weight: 500;
-}
-
-.skill__title {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #4e8839;
-	font-family: 'Roboto', sans-serif;
-	font-size: .8125rem;
-	font-weight: 500;
-	line-height: 1rem;
-	text-align: center;
 }

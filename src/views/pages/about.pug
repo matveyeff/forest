@@ -10,10 +10,8 @@ block scripts
 
 block content
 	section.about
-		.about__triangle
-			svg(fill="#ebefe2", viewbox="0 0 100 100", class="triangle", preserveAspectRatio="none")
-				polygon.triangle-left(points="0 100, 50 100, 0 0")
-				polygon.triangle-right(points="50,100 100,0 100,100")
+		block triangles
+			+triangles('header__triangles')
 		.about__left
 			.about__left-title Обо мне
 			.about__left-content
@@ -26,31 +24,13 @@ block content
 							p Я веб разработчик из Москвы. Мне 30 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
 							p Этот сайт я сделал в рамках обучения в школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
 		.about__right
-			.about__right-title
-				h3.about__right-subtitle Чем я могу быть вам полезен
+			h3.about__right-title Чем я могу быть вам полезен
 			.about__right-description.text-content
 				p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
 			.about__right-content
 
-				-
-					var skills = [
-						['Frontend', [['HTML5', 30], ['CSS3', 50], ['javascript & jQuery', 70]]],
-						['Backend', [['PHP', 30], ['mySQL', 50], ['Node.js & npm', 70], ['Mongo.db', 70]]],
-						['Workflow', [['Git', 30], ['Gulp', 50], ['Bower', 70]]],
-					]
+				#skills-component
 
-				ul.skills-list
-					each skillsrow in skills
-						li.skills-list__item.skills-row
-							.skills-row__title #{skillsrow[0]}
-							ul.skills-row__list
-								each skill in skillsrow[1]
-									li.skills-row__item
-										.skill(data-percents="70")
-											svg(viewBox="0 0 100 100" preserveAspectRatio="none").skill__figure
-												circle(cx="50" cy="50" r="40").skill__circle.skill__circle_under
-												circle(cx="50" cy="50" r="40").skill__circle.skill__circle_above
-											.skill__title #{skill[0]}
 	section.contacts
 		.map#map(style="width:100%; height:100%")
 		.contacts__wrap
