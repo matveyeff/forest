@@ -19,7 +19,7 @@
 }
 
 .fs-nav__bg {
-	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 	background: rgba(108,156,90,.85);
 	bottom: 0;
 	height: 100%;
@@ -45,8 +45,6 @@
 .fs-nav__list {
 	align-items: center;
 	bottom: -30px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -66,7 +64,7 @@
 
 .fs-nav__list--link {
 	color: #fff;
-	font-family: Sansus;
+	font-family: 'Sansus';
 	font-size: 3.9375rem;
 	position: relative;
 	text-decoration: none;
@@ -78,7 +76,6 @@
 }
 
 .fs-nav__list--link:after {
-	-webkit-transition: width .3s ease;
 	background: #fff;
 	bottom: -15px;
 	content: "";
