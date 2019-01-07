@@ -1,0 +1,129 @@
+.hamburger {
+	align-items: center;
+	background-color: transparent;
+	border: 0;
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	font: inherit;
+	justify-content: center;
+	margin: 0 0 0 auto;
+	overflow: visible;
+	padding: .9375rem;
+	text-transform: none;
+	transition-duration: .15s;
+	transition-property: opacity,-webkit-filter;
+	transition-property: opacity,filter;
+	transition-property: opacity,filter,-webkit-filter;
+	transition-timing-function: linear;
+	z-index: 99999;
+}
+
+.hamburger-box {
+	display: inline-block;
+	height: 4px * 3 + 6px * 2;
+	position: relative;
+	width: 40px;
+}
+
+.hamburger-inner {
+	display: block;
+	margin-top: 4px/-2;
+	top: 50%;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	-webkit-transition-duration: .15s;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-timing-function: ease;
+	background-color: #fff;
+	border-radius: 4px;
+	height: 4px;
+	position: absolute;
+	transition-duration: .15s;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform,-webkit-transform;
+	transition-timing-function: ease;
+	width: 40px;
+}
+
+.hamburger--squeeze .hamburger-inner {
+	-webkit-transition-duration: 75ms;
+	-webkit-transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+	transition-duration: 75ms;
+	transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburger--squeeze .hamburger-inner:before {
+	-webkit-transition: top 75ms ease .12s,opacity 75ms ease;
+	transition: top 75ms ease .12s,opacity 75ms ease;
+}
+.hamburger-inner:before {
+	top: -10px;
+}
+.hamburger-inner:after, .hamburger-inner:before {
+	content: "";
+	display: block;
+}
+
+.hamburger--squeeze .hamburger-inner:after {
+	-webkit-transition: bottom 75ms ease .12s,-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19),-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+}
+.hamburger-inner:after {
+	bottom: -10px;
+}
+.hamburger-inner:after, .hamburger-inner:before {
+	content: "";
+	display: block;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	-webkit-transition-duration: .15s;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-timing-function: ease;
+	background-color: #fff;
+	border-radius: 4px;
+	height: 4px;
+	position: absolute;
+	transition-duration: .15s;
+	transition-property: -webkit-transform;
+	transition-property: transform;
+	transition-property: transform,-webkit-transform;
+	transition-timing-function: ease;
+	width: 40px;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+	-webkit-transform: rotate(45deg);
+	-webkit-transition-delay: .12s;
+	-webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+	transform: rotate(45deg);
+	transition-delay: .12s;
+	transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner:before {
+	-webkit-transition: top 75ms ease,opacity 75ms ease .12s;
+	opacity: 0;
+	top: 0;
+	transition: top 75ms ease,opacity 75ms ease .12s;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner:after {
+	-webkit-transform: rotate(-90deg);
+	-webkit-transition: bottom 75ms ease,-webkit-transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+	bottom: 0;
+	transform: rotate(-90deg);
+	transition: bottom 75ms ease,-webkit-transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+	transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+	transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s,-webkit-transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+}
+.hamburger--squeeze .hamburger-inner:after {
+	-webkit-transition: bottom 75ms ease .12s,-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+	transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19),-webkit-transform 75ms cubic-bezier(.55,.055,.675,.19);
+}

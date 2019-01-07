@@ -1,5 +1,6 @@
 include ./common/_mixins
 block variables
+block headerInfo
 
 doctype html
 html(lang="ru")
@@ -18,6 +19,7 @@ html(lang="ru")
 
 				block content
 
+				include ./common/fs-menu.pug
 				include ./common/footer.pug
 				include ./components/entry.pug
 
