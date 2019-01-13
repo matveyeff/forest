@@ -1,23 +1,23 @@
 .preloader {
 	position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #6c9c5a;
-background-size: cover;
-z-index: 1000;
-height: 100%;
-width: 100%;
-opacity: 1;
-transition: opacity 1s ease;
-&_hide {
-			opacity: 0;
-	visibility: hidden;
-	}
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #6c9c5a;
+	background-position: cover;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: opacity 1s ease;
+	&_hide {
+		opacity: 0;
+		visibility: hidden;
+		}
 	
 &__icon {
-			position: absolute;
+	position: absolute;
 	width: 100px;
 	height: 100px;
 	top: 50%;
@@ -26,13 +26,13 @@ transition: opacity 1s ease;
 	}
 	
 &__circle {
-			border: 5px solid #ffffff;
+	border: 5px solid #ffffff;
 	border-radius: 50%;
 	height: 100%;
 	position: relative;
 	animation: spin 2s ease-in-out infinite;
 	&::after {
-					content: "";
+		content: "";
 		position: absolute;
 		top: -20px;
 		left: 50%;
@@ -41,12 +41,11 @@ transition: opacity 1s ease;
 		background-color: #ffffff;
 		border-radius: 50%;
 		transform: translateX(-50%);
-			}
-		
+		}		
 	}
 	
 &__percent {
-			position: absolute;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -55,7 +54,6 @@ transition: opacity 1s ease;
 	font-size: 24px;
 	color: #ffffff;
 	}
-	
 }
 
 
