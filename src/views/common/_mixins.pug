@@ -59,3 +59,9 @@ mixin parallax-block(className)
 				source( type="image/webp" srcset="assets/images/no_bg_webp.webp").img-responsive.parallax-block__img
 				source(media="(max-width: 992px )", srcset="assets/images/no_bg_tablet.png").img-responsive.parallax-block__img
 				img(src="assets/images/no_bg.png", alt="").img-responsive.parallax-block__img
+
+mixin preloader
+	.preloader#preloader
+		.preloader__icon
+			.preloader__circle
+			#preloader-counter.preloader__percent 0%

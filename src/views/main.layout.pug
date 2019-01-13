@@ -10,18 +10,20 @@ html(lang="ru")
 		meta(content="width=device-width, initial-scale=1" name="viewport")
 
 		title Portfolio | #{title}
+		link(rel='icon' type='image/png' href='./assets/images/fav_forest.png')
 		link(rel='stylesheet' href='main.min.css')
 	body
 		.wrapper
+			+preloader
 			.maincontent
 
 				include ./common/header.pug
 
 				block content
 
+				include ./components/_entry.pug
 				include ./common/fs-menu.pug
 				include ./common/footer.pug
-				include ./components/entry.pug
 
 		script(src='bootloader.bundle.js')
 		script(srs='vendor.bundle.js')

@@ -1,12 +1,12 @@
-console.log("auth module loaded");
+import switchCards from '@modules/switchCards';
+import preloader from '@modules/preloader';
 
-var authBtn = document.getElementById('authBtn');
-var signInBack = document.getElementById('sign_in_back')
-
-authBtn.addEventListener('click', function() {
-	document.getElementById('flipper').style.transform = 'rotateY(180deg)';
-})	
-
-signInBack.addEventListener('click', function() {
-	document.getElementById('flipper').style.transform = 'rotateY(360deg)';
-})
+document.addEventListener('DOMContentLoaded', () => {
+    
+    let linkAuth = document.querySelector('#authBtn'),
+        flipContainer = document.querySelector('#flipper'),
+        signInReset = document.querySelector('#sign_in_back');
+    
+		switchCards(linkAuth, flipContainer, signInReset);
+		preloader();
+});

@@ -41,7 +41,8 @@ module.exports = {
   resolve: {
     alias: {
       vue$:
-        env === "development" ? "vue/dist/vue.esm.js" : "vue/dist/vue.min.js"
+				env === "development" ? "vue/dist/vue.esm.js" : "vue/dist/vue.min.js",
+				'@modules': __dirname + '/src/assets/scripts/modules'
     }
   },
   devtool: env === "development" ? "#eval-source-map" : ""

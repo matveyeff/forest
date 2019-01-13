@@ -5,7 +5,7 @@ block variables
 	-	var title	=	'Обо мне'
 
 block scripts
-	script(src='about.bundle.js')
+	script(src='works.bundle.js')
 
 block content
 	section.works
@@ -13,22 +13,8 @@ block content
 			+triangles('header__triangles header__triangles_white')
 		.works__title-container
 			.works__title Мои работы
-		.works-slider
-			.works-slider-left
-				span.works-slider__used-wrapper
-					h2.works-slider__title Фитнес-клуб "Афродита"
-				span.works-slider__used-wrapper
-					h4.works-slider__subtitle HTML5, CSS3
-				a(href="#").works-slider__button-link Посмотреть сайт
-			.works-slider__img-container
-				img(src="./assets/images/photo.jpg").works-slider__img
-			.works-slider__buttons
-				button.works-slider__button.works-slider__prev
-					.slider-anim-container
-						.works-slider__bg-button(style="background-image: url('./assets/images/yoga.png')")
-				button.works-slider__button.works-slider__next
-					.slider-anim-container
-						.works-slider__bg-button(style="background-image: url('./assets/images/trialog.png')")
+		.slider-container
+			#slider-component
 
 	section.works-about
 		h2.works__title.works-about__title Что обо мне говорят

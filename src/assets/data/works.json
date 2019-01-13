@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title" : "Сайт-портфолио",
+    "skills" : "Html, Css, JavaScript, Vue",
+    "photo" : "/assets/images/content/slider/work-1.png",
+    "link" : "https://matveyeff.github.io/forest/dist/#"
+  },
+  {
+    "id": 2,
+    "title" : "Сайт Mr. Burger",
+    "skills" : "Html, Css, JavaScript",
+    "photo" : "/assets/images/content/slider/work-2.png",
+    "link" : "https://matveyeff.github.io/burgers"
+  },
+  {
+    "id": 3,
+    "title" : "Афродита Фитнесс",
+    "skills" : "Html5, Css3",
+    "photo" : "/assets/images/content/slider/work-3.png",
+    "link" : "https://matveyeff.github.io/html-css/afrodita"
+  },
+  {
+    "id": 4,
+    "title" : "Коворкинг Workadium",
+    "skills" : "Html5, Css3",
+    "photo" : "/assets/images/content/slider/work-4.png",
+    "link" : "https://matveyeff.github.io/html-css/workadium"
+  }
+]
